@@ -1,5 +1,7 @@
 package inhatc.spring.shop.entity;
 
+import inhatc.spring.shop.common.entity.BaseEntity;
+import inhatc.spring.shop.constant.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Table(name = "orders")
-public class Order {
+public class Order extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")

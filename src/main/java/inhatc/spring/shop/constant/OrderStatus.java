@@ -1,4 +1,4 @@
-package inhatc.spring.shop.entity;
+package inhatc.spring.shop.constant;
 
 public enum OrderStatus {
 

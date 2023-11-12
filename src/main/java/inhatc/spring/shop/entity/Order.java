@@ -30,8 +30,7 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;   // 주문 상태
 
-    //@OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderItem> orderItemList = new ArrayList<>(); // 주문 상품
 
 }

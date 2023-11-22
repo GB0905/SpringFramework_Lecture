@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 @Service
-//@Transactional
+@Transactional
 @Slf4j
 @RequiredArgsConstructor
 public class MemberService implements UserDetailsService {
